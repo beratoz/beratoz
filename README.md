@@ -1,9 +1,9 @@
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=1000&color=00FF41&center=true&vCenter=true&width=800&height=50&lines=%3E+USER_PROFILE_ACCESSED+_" alt="Header" />
   <br/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=400&size=16&pause=800&color=008F11&center=true&vCenter=true&width=800&height=30&lines=INITIALIZING+SYSTEM...;BACKEND+MODULE+LOADED;AUTOMATION+ENGINE+ONLINE;LOCAL+LLM+PIPELINE+READY;RAG+SYSTEM+INITIALIZED;AI+MODULE+ACTIVE" alt="System Boot Sequence" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=400&size=16&pause=800&color=008F11&center=true&vCenter=true&width=800&height=30&lines=INITIALIZING+SYSTEM...;BACKEND+MODULE+LOADED;AUTOMATION+ENGINE+ONLINE;PLC+INTERFACE+CONNECTED;OPC+UA+%2F+MODBUS+LINK+ESTABLISHED;LOCAL+LLM+PIPELINE+READY;RAG+SYSTEM+INITIALIZED;AI+MODULE+ACTIVE" alt="System Boot Sequence" />
   <br/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1500&color=00FF41&center=true&vCenter=true&width=800&height=50&lines=Backend+Developer;.NET+Developer;Automation+Systems;AI+%26+Machine+Learning;Local+LLM+%26+RAG;Data+Science;Deep+Learning;Applied+Robotics" alt="Roles" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1500&color=00FF41&center=true&vCenter=true&width=800&height=50&lines=Backend+Developer;.NET+Developer;PLC+%26+Industrial+Automation;Industrial+Data+Integration;AI+%26+Machine+Learning;Local+LLM+%26+RAG;Data+Science;Deep+Learning;Applied+Robotics" alt="Roles" />
 </div>
 
 <br/>
@@ -34,6 +34,13 @@ $ cat identity.config
 ![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=00FF41)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=00FF41)
 
+**`[+] INDUSTRIAL_AUTOMATION`**  
+![PLC](https://img.shields.io/badge/PLC_Programming-000000?style=for-the-badge&logo=siemens&logoColor=00FF41)
+![SCADA](https://img.shields.io/badge/SCADA_%2F_HMI-000000?style=for-the-badge&logo=grafana&logoColor=00FF41)
+![OPC UA](https://img.shields.io/badge/OPC_UA-000000?style=for-the-badge&logo=opcua&logoColor=00FF41)
+![Modbus](https://img.shields.io/badge/Modbus_TCP-000000?style=for-the-badge&logo=arduino&logoColor=00FF41)
+![MQTT](https://img.shields.io/badge/MQTT-000000?style=for-the-badge&logo=mqtt&logoColor=00FF41)
+
 **`[+] AI_&_DATA_SCIENCE`**  
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-000000?style=for-the-badge&logo=tensorflow&logoColor=00FF41)
 ![Keras](https://img.shields.io/badge/Keras-000000?style=for-the-badge&logo=keras&logoColor=00FF41)
@@ -52,14 +59,15 @@ $ cat identity.config
 
 ```mermaid
 graph LR
-  A[Backend] --> B[Automation]
-  B --> C[AI & Local LLM]
-  C --> D[Data Science]
-  D --> E[Deep Learning]
-  E --> F[Robotics]
-  
+  A["Backend<br/>.NET / APIs"] --> B["PLC & Industrial<br/>Automation"]
+  B --> C["Industrial Data<br/>OPC UA / Modbus / MQTT"]
+  C --> D["AI & Local LLM<br/>RAG Systems"]
+  D --> E["Data Science"]
+  E --> F["Deep Learning"]
+  F --> G["Robotics"]
+
   classDef matrix fill:#0d1117,stroke:#00FF41,stroke-width:2px,color:#00FF41,font-family:monospace;
-  class A,B,C,D,E,F matrix;
+  class A,B,C,D,E,F,G matrix;
   linkStyle default stroke:#00FF41,stroke-width:1px;
 ```
 
