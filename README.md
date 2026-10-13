@@ -36,10 +36,7 @@ $ cat identity.config
 
 **`[+] INDUSTRIAL_AUTOMATION`**  
 ![PLC](https://img.shields.io/badge/PLC_Programming-000000?style=for-the-badge&logo=siemens&logoColor=00FF41)
-![SCADA](https://img.shields.io/badge/SCADA_%2F_HMI-000000?style=for-the-badge&logo=grafana&logoColor=00FF41)
 ![OPC UA](https://img.shields.io/badge/OPC_UA-000000?style=for-the-badge&logo=opcua&logoColor=00FF41)
-![Modbus](https://img.shields.io/badge/Modbus_TCP-000000?style=for-the-badge&logo=arduino&logoColor=00FF41)
-![MQTT](https://img.shields.io/badge/MQTT-000000?style=for-the-badge&logo=mqtt&logoColor=00FF41)
 
 **`[+] AI_&_DATA_SCIENCE`**  
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-000000?style=for-the-badge&logo=tensorflow&logoColor=00FF41)
