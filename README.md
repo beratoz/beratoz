@@ -3,7 +3,7 @@
   <br/>
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=400&size=16&pause=800&color=008F11&center=true&vCenter=true&width=800&height=30&lines=INITIALIZING+SYSTEM...;BACKEND+MODULE+LOADED;AUTOMATION+ENGINE+ONLINE;PLC+INTERFACE+CONNECTED;OPC+UA+%2F+MODBUS+LINK+ESTABLISHED;LOCAL+LLM+PIPELINE+READY;RAG+SYSTEM+INITIALIZED;AI+MODULE+ACTIVE" alt="System Boot Sequence" />
   <br/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1500&color=00FF41&center=true&vCenter=true&width=800&height=50&lines=Backend+Developer;.NET+Developer;PLC+%26+Industrial+Automation;Industrial+Data+Integration;AI+%26+Machine+Learning;Local+LLM+%26+RAG;Data+Science;Deep+Learning;Applied+Robotics" alt="Roles" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1500&color=00FF41&center=true&vCenter=true&width=800&height=50&lines=Backend+Developer;.NET+Developer;PLC+%26+Industrial+Automation;Industrial+Data+Integration;AI+%26+Machine+Learning;Local+LLM+%26+RAG;Data+Science;Deep+Learning" alt="Roles" />
 </div>
 
 <br/>
@@ -17,8 +17,6 @@ $ cat identity.config
 > Deeply focused on applied AI: Building advanced RAG architectures and deploying Local LLMs.
 > Transforming complex data into intelligent, autonomous systems using data science and deep learning.
 ```
-
-
 
 ### `> ls /usr/local/skills`
 
@@ -50,38 +48,24 @@ $ cat identity.config
 ![Vector DBs](https://img.shields.io/badge/Vector_Databases-000000?style=for-the-badge&logo=databricks&logoColor=00FF41)
 ![RAG](https://img.shields.io/badge/RAG_Pipelines-000000?style=for-the-badge&logo=openai&logoColor=00FF41)
 
+### `> cat /learning/focus.md`
 
-
-### `> execute roadmap.sh`
-
-```mermaid
-graph LR
-  A["Backend<br/>.NET / APIs"] --> B["PLC & Industrial<br/>Automation"]
-  B --> C["Industrial Data<br/>OPC UA / Modbus / MQTT"]
-  C --> D["AI & Local LLM<br/>RAG Systems"]
-  D --> E["Data Science"]
-  E --> F["Deep Learning"]
-  F --> G["Robotics"]
-
-  classDef matrix fill:#0d1117,stroke:#00FF41,stroke-width:2px,color:#00FF41,font-family:monospace;
-  class A,B,C,D,E,F,G matrix;
-  linkStyle default stroke:#00FF41,stroke-width:1px;
-```
-
-
-
-
-
+| Area | Focus |
+| :--- | :--- |
+| **Backend Development** | .NET / APIs |
+| **Industrial Automation** | PLC Programming |
+| **Industrial Data Integration** | OPC UA / Modbus / MQTT |
+| **AI & Local LLMs** | RAG Systems |
+| **Data Science** | Data Analysis / Machine Learning |
+| **Deep Learning** | Neural Networks / TensorFlow / Keras |
 
 ### `> ping -c 4 user_network`
 
 <div align="center">
-
   <a href="https://www.linkedin.com/in/berat-ozkan/">
     <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00FF41" alt="LinkedIn" />
   </a>
   <a href="mailto:16ozkanberat@gmail.com">
     <img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=minutemailer&logoColor=00FF41" alt="Email" />
   </a>
-
 </div>
