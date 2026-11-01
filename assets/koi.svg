@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Neon koi swimming in a cyberpunk pond">
+  <title>Neon Koi Pond // 錦鯉</title>
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050014"/>
+      <stop offset="1" stop-color="#06213d"/>
+    </linearGradient>
+    <radialGradient id="pondGlow" cx=".5" cy=".5" r=".6">
+      <stop offset="0" stop-color="#00f0ff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fHead" gradientUnits="userSpaceOnUse" x1="54" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffd0e0"/>
+    </linearGradient>
+    <linearGradient id="fRear" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="-46" y2="0">
+      <stop offset="0" stop-color="#ffd0e0"/>
+      <stop offset="1" stop-color="#ff4d6d"/>
+    </linearGradient>
+    <linearGradient id="fTail" gradientUnits="userSpaceOnUse" x1="-44" y1="0" x2="-84" y2="0">
+      <stop offset="0" stop-color="#ff4d6d" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#00f0ff" stop-opacity=".35"/>
+    </linearGradient>
+    <filter id="aura" x="-50%" y="-150%" width="200%" height="400%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="headClip">
+      <path d="M54,0 C51,-11 32,-18 0,-14.5 L0,14.5 C32,18 51,11 54,0 Z"/>
+    </clipPath>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" opacity=".25"/>
+    </pattern>
+
+    <!-- KOI (facing +x, ~136 units long) -->
+    <g id="koi">
+      <ellipse cx="-8" cy="0" rx="74" ry="22" fill="#00f0ff" opacity=".2" filter="url(#aura)"/>
+
+      <!-- rear body + tail: swings from the hip -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-8 0 0;8 0 0;-8 0 0" keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1" dur="1.6s" repeatCount="indefinite"/>
+        <path d="M8,-14.5 C-14,-12 -32,-5 -46,-1.5 L-46,1.5 C-32,5 -14,12 8,14.5 Z" fill="url(#fRear)" stroke="#00f0ff" stroke-width=".7" stroke-opacity=".7"/>
+        <path d="M6,0 L-44,0" stroke="#00f0ff" stroke-width=".9" stroke-opacity=".7" stroke-dasharray="2 4" fill="none">
+          <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1s" repeatCount="indefinite"/>
+        </path>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="-16 -46 0;16 -46 0;-16 -46 0" keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1" dur="1.6s" begin="-.35s" repeatCount="indefinite"/>
+          <path d="M-44,0 C-54,-5 -66,-16 -84,-26 C-78,-10 -74,-3 -72,0 C-74,3 -78,10 -84,26 C-66,16 -54,5 -44,0 Z" fill="url(#fTail)" stroke="#00f0ff" stroke-width=".7" stroke-opacity=".8"/>
+        </g>
+      </g>
+
+      <!-- pectoral fins -->
+      <g fill="#ffd0e0" fill-opacity=".55" stroke="#00f0ff" stroke-width=".6" stroke-opacity=".7">
+        <path d="M32,-13 C26,-24 14,-30 6,-31 C12,-22 16,-15 22,-12 Z">
+          <animateTransform attributeName="transform" type="rotate" values="0 30 -12;-12 30 -12;0 30 -12" dur="1.6s" repeatCount="indefinite"/>
+        </path>
+        <path d="M32,13 C26,24 14,30 6,31 C12,22 16,15 22,12 Z">
+          <animateTransform attributeName="transform" type="rotate" values="0 30 12;12 30 12;0 30 12" dur="1.6s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <!-- front body (kohaku / tancho pattern) -->
+      <path d="M54,0 C51,-11 32,-18 0,-14.5 L0,14.5 C32,18 51,11 54,0 Z" fill="url(#fHead)"/>
+      <g clip-path="url(#headClip)">
+        <ellipse cx="14" cy="3" rx="13" ry="8" fill="#ff5a1f"/>
+        <ellipse cx="4" cy="-9" rx="7" ry="4" fill="#ff2a6d" opacity=".8"/>
+        <ellipse cx="38" cy="0" rx="6.5" ry="6" fill="#ff1f3d"/>
+      </g>
+      <path d="M54,0 C51,-11 32,-18 0,-14.5 L0,14.5 C32,18 51,11 54,0 Z" fill="none" stroke="#00f0ff" stroke-width=".8" stroke-opacity=".8"/>
+      <path d="M50,0 L4,0" stroke="#00f0ff" stroke-width=".9" stroke-opacity=".55" stroke-dasharray="2 4" fill="none">
+        <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- cyber eyes -->
+      <circle cx="45" cy="-7.5" r="1.9" fill="#00f0ff"/>
+      <circle cx="45" cy="7.5" r="1.9" fill="#00f0ff"/>
+    </g>
+  </defs>
+
+  <!-- POND -->
+  <rect width="1000" height="260" rx="8" fill="url(#water)"/>
+  <rect width="1000" height="260" rx="8" fill="url(#pondGlow)"/>
+  <text x="500" y="200" text-anchor="middle" font-size="190" font-family="'Noto Serif JP','Yu Mincho','MS Mincho',serif" fill="#00f0ff" opacity=".045">鯉</text>
+
+  <!-- flowing water lines -->
+  <g fill="none" stroke="#00f0ff" stroke-opacity=".14" stroke-width="1.2" stroke-dasharray="12 18">
+    <path d="M0,50 Q125,30 250,50 T500,50 T750,50 T1000,50"><animate attributeName="stroke-dashoffset" from="0" to="-60" dur="5s" repeatCount="indefinite"/></path>
+    <path d="M0,110 Q125,90 250,110 T500,110 T750,110 T1000,110"><animate attributeName="stroke-dashoffset" from="0" to="60" dur="6s" repeatCount="indefinite"/></path>
+    <path d="M0,170 Q125,150 250,170 T500,170 T750,170 T1000,170"><animate attributeName="stroke-dashoffset" from="0" to="-60" dur="7s" repeatCount="indefinite"/></path>
+    <path d="M0,228 Q125,208 250,228 T500,228 T750,228 T1000,228"><animate attributeName="stroke-dashoffset" from="0" to="60" dur="5.5s" repeatCount="indefinite"/></path>
+  </g>
+
+  <!-- ripples -->
+  <g fill="none" stroke="#00f0ff" stroke-width="1">
+    <ellipse cx="170" cy="60" rx="2" ry="1"><animate attributeName="rx" values="2;34" dur="3.4s" repeatCount="indefinite"/><animate attributeName="ry" values="1;12" dur="3.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="3.4s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="520" cy="215" rx="2" ry="1"><animate attributeName="rx" values="2;40" dur="4s" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="ry" values="1;14" dur="4s" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="4s" begin="-1.5s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="830" cy="80" rx="2" ry="1" stroke="#ff2a6d"><animate attributeName="rx" values="2;32" dur="3.8s" begin="-2.2s" repeatCount="indefinite"/><animate attributeName="ry" values="1;11" dur="3.8s" begin="-2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="3.8s" begin="-2.2s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="330" cy="150" rx="2" ry="1" stroke="#ff2a6d"><animate attributeName="rx" values="2;28" dur="3.2s" begin="-.8s" repeatCount="indefinite"/><animate attributeName="ry" values="1;10" dur="3.2s" begin="-.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="3.2s" begin="-.8s" repeatCount="indefinite"/></ellipse>
+  </g>
+
+  <!-- lily pads -->
+  <g stroke="#00ff9c" stroke-width="1" fill="#05281f" fill-opacity=".9">
+    <g><animateTransform attributeName="transform" type="translate" values="0 0;3 2;0 0" dur="6s" repeatCount="indefinite"/>
+      <ellipse cx="90" cy="205" rx="22" ry="9"/><path d="M90,205 L110,200" stroke-opacity=".8"/>
+      <circle cx="84" cy="203" r="3.5" fill="#ff2a6d" stroke="#ff9ac7"/>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0;-3 2;0 0" dur="7s" repeatCount="indefinite"/>
+      <ellipse cx="640" cy="48" rx="18" ry="7"/><path d="M640,48 L656,44" stroke-opacity=".8"/>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0;2 -2;0 0" dur="5s" repeatCount="indefinite"/>
+      <ellipse cx="925" cy="190" rx="24" ry="10"/><path d="M925,190 L946,184" stroke-opacity=".8"/>
+      <circle cx="918" cy="188" r="3.5" fill="#ffe600" stroke="#fff"/>
+    </g>
+  </g>
+
+  <!-- KOI #1 -->
+  <g>
+    <animateMotion dur="22s" rotate="auto" repeatCount="indefinite" path="M-160,150 C-40,40 150,40 260,120 C370,200 470,210 580,140 C690,70 800,50 900,110 C990,160 1080,160 1180,100"/>
+    <use href="#koi"/>
+  </g>
+
+  <!-- KOI #2 (smaller, deeper) -->
+  <g opacity=".6">
+    <animateMotion dur="30s" begin="-11s" rotate="auto" repeatCount="indefinite" path="M1180,205 C1060,245 940,245 840,195 C740,145 640,155 540,205 C440,255 330,235 240,185 C150,135 40,135 -160,185"/>
+    <use href="#koi" transform="scale(.7)"/>
+  </g>
+
+  <!-- sakura petals -->
+  <g fill="#ff9ac7" opacity=".9">
+    <ellipse rx="3.2" ry="1.8"><animateMotion dur="11s" begin="-1s" rotate="auto" repeatCount="indefinite" path="M120,-10 C200,70 60,150 240,280"/></ellipse>
+    <ellipse rx="3" ry="1.7"><animateMotion dur="14s" begin="-6s" rotate="auto" repeatCount="indefinite" path="M360,-10 C300,80 470,140 400,280"/></ellipse>
+    <ellipse rx="3.4" ry="1.9"><animateMotion dur="12s" begin="-3s" rotate="auto" repeatCount="indefinite" path="M560,-10 C640,60 520,150 690,280"/></ellipse>
+    <ellipse rx="3" ry="1.7"><animateMotion dur="16s" begin="-9s" rotate="auto" repeatCount="indefinite" path="M760,-10 C700,90 860,140 780,280"/></ellipse>
+    <ellipse rx="3.2" ry="1.8"><animateMotion dur="13s" begin="-4s" rotate="auto" repeatCount="indefinite" path="M900,-10 C960,60 840,160 980,280"/></ellipse>
+    <ellipse rx="2.8" ry="1.6"><animateMotion dur="15s" begin="-8s" rotate="auto" repeatCount="indefinite" path="M20,-10 C90,90 -10,170 70,280"/></ellipse>
+  </g>
+
+  <!-- labels -->
+  <g font-family="'Courier New',monospace" font-size="11" letter-spacing="1">
+    <text x="22" y="30" fill="#00f0ff" opacity=".9">錦鯉 // NISHIKIGOI
+      <animate attributeName="opacity" values=".9;.9;.3;.9;.9" keyTimes="0;.7;.73;.76;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <text x="978" y="244" text-anchor="end" fill="#ff2a6d" opacity=".9">鯉 = 忍耐 // PERSEVERANCE.EXE</text>
+  </g>
+
+  <!-- scanlines + frame -->
+  <rect width="1000" height="260" rx="8" fill="url(#scan)"/>
+  <rect x=".5" y=".5" width="999" height="259" rx="8" fill="none" stroke="#00f0ff" stroke-opacity=".5"/>
+</svg>

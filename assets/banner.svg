@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Neo-Tokyo cyberpunk banner">
+  <title>BERAT ÖZKAN // NEO-TOKYO 2077</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05000f"/>
+      <stop offset=".55" stop-color="#16042e"/>
+      <stop offset="1" stop-color="#3a0a4f"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff9a3c"/>
+      <stop offset=".5" stop-color="#ff2a6d"/>
+      <stop offset="1" stop-color="#7a00ff"/>
+    </linearGradient>
+    <mask id="sunMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="300">
+      <rect width="1000" height="300" fill="#fff"/>
+      <rect x="380" y="158" width="240" height="2" fill="#000"/>
+      <rect x="380" y="172" width="240" height="3" fill="#000"/>
+      <rect x="380" y="186" width="240" height="4" fill="#000"/>
+      <rect x="380" y="201" width="240" height="5" fill="#000"/>
+      <rect x="380" y="217" width="240" height="6" fill="#000"/>
+    </mask>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="halo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <pattern id="win" width="10" height="12" patternUnits="userSpaceOnUse">
+      <rect x="2" y="3" width="4" height="5" fill="#00f0ff" opacity=".32"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" opacity=".28"/>
+    </pattern>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00f0ff" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <g id="bldgs">
+      <rect x="0" y="115" width="58" height="185"/>
+      <rect x="62" y="160" width="46" height="140"/>
+      <rect x="112" y="95" width="46" height="205"/>
+      <rect x="162" y="170" width="58" height="130"/>
+      <rect x="224" y="195" width="64" height="105"/>
+      <rect x="292" y="212" width="70" height="88"/>
+      <rect x="366" y="222" width="66" height="78"/>
+      <rect x="436" y="226" width="70" height="74"/>
+      <rect x="510" y="222" width="66" height="78"/>
+      <rect x="580" y="208" width="62" height="92"/>
+      <rect x="646" y="188" width="52" height="112"/>
+      <rect x="702" y="160" width="56" height="140"/>
+      <rect x="762" y="200" width="60" height="100"/>
+      <rect x="826" y="225" width="48" height="75"/>
+      <rect x="878" y="232" width="50" height="68"/>
+      <rect x="932" y="176" width="68" height="124"/>
+    </g>
+
+    <g id="c1" font-family="'Noto Sans JP','Yu Gothic','MS Gothic',monospace" font-size="14" text-anchor="middle" fill="#00f0ff">
+      <text x="0" y="0">
+        <tspan x="0" fill-opacity=".12">ア</tspan><tspan x="0" dy="17" fill-opacity=".2">ス</tspan><tspan x="0" dy="17" fill-opacity=".3">電</tspan><tspan x="0" dy="17" fill-opacity=".4">キ</tspan><tspan x="0" dy="17" fill-opacity=".55">ト</tspan><tspan x="0" dy="17" fill-opacity=".7">夜</tspan><tspan x="0" dy="17" fill-opacity=".85">ネ</tspan><tspan x="0" dy="17" fill="#fff">オ</tspan>
+      </text>
+    </g>
+    <g id="c2" font-family="'Noto Sans JP','Yu Gothic','MS Gothic',monospace" font-size="14" text-anchor="middle" fill="#ff2a6d">
+      <text x="0" y="0">
+        <tspan x="0" fill-opacity=".12">サ</tspan><tspan x="0" dy="17" fill-opacity=".2">鯉</tspan><tspan x="0" dy="17" fill-opacity=".3">イ</tspan><tspan x="0" dy="17" fill-opacity=".4">ク</tspan><tspan x="0" dy="17" fill-opacity=".55">都</tspan><tspan x="0" dy="17" fill-opacity=".7">ロ</tspan><tspan x="0" dy="17" fill-opacity=".85">雨</tspan><tspan x="0" dy="17" fill="#fff">ン</tspan>
+      </text>
+    </g>
+    <g id="c3" font-family="'Noto Sans JP','Yu Gothic','MS Gothic',monospace" font-size="14" text-anchor="middle" fill="#b967ff">
+      <text x="0" y="0">
+        <tspan x="0" fill-opacity=".12">ヨ</tspan><tspan x="0" dy="17" fill-opacity=".2">光</tspan><tspan x="0" dy="17" fill-opacity=".3">ル</tspan><tspan x="0" dy="17" fill-opacity=".4">コ</tspan><tspan x="0" dy="17" fill-opacity=".55">ハ</tspan><tspan x="0" dy="17" fill-opacity=".7">影</tspan><tspan x="0" dy="17" fill-opacity=".85">ケ</tspan><tspan x="0" dy="17" fill="#fff">ミ</tspan>
+      </text>
+    </g>
+  </defs>
+
+  <!-- SKY -->
+  <rect width="1000" height="300" fill="url(#sky)"/>
+  <g fill="#fff">
+    <circle cx="40" cy="60" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="38" r="1.2"><animate attributeName="opacity" values="1;.2;1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="72" r="1"><animate attributeName="opacity" values=".3;1;.3" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="335" cy="30" r="1"><animate attributeName="opacity" values="1;.3;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="58" r="1.2"><animate attributeName="opacity" values=".2;1;.2" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="585" cy="42" r="1"><animate attributeName="opacity" values="1;.2;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="655" cy="78" r="1"><animate attributeName="opacity" values=".3;1;.3" dur="3.7s" repeatCount="indefinite"/></circle>
+    <circle cx="735" cy="34" r="1.2"><animate attributeName="opacity" values="1;.3;1" dur="4.4s" repeatCount="indefinite"/></circle>
+    <circle cx="815" cy="64" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="905" cy="46" r="1"><animate attributeName="opacity" values="1;.2;1" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="965" cy="92" r="1"><animate attributeName="opacity" values=".3;1;.3" dur="4.1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- SUN -->
+  <circle cx="500" cy="140" r="100" fill="#ff2a6d" opacity=".35" filter="url(#halo)"/>
+  <circle cx="500" cy="140" r="90" fill="url(#sun)" mask="url(#sunMask)"/>
+
+  <!-- CITY -->
+  <use href="#bldgs" fill="#12062a"/>
+  <use href="#bldgs" fill="url(#win)"/>
+  <g>
+    <rect x="133" y="76" width="1.5" height="19" fill="#12062a"/>
+    <circle cx="133.7" cy="75" r="2.2" fill="#ff2a6d" filter="url(#glow)"><animate attributeName="opacity" values="1;0;1" dur="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="730" cy="155" r="2.2" fill="#ff2a6d" filter="url(#glow)"><animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="966" cy="171" r="2.2" fill="#ff2a6d" filter="url(#glow)"><animate attributeName="opacity" values="1;0;1" dur="2.2s" repeatCount="indefinite"/></circle>
+  </g>
+  <g>
+    <rect x="120" y="180" width="6" height="8" fill="#ffe600"><animate attributeName="opacity" values="1;0;1" dur="3.3s" repeatCount="indefinite"/></rect>
+    <rect x="140" y="226" width="6" height="8" fill="#00f0ff"><animate attributeName="opacity" values="0;1;0" dur="2.7s" repeatCount="indefinite"/></rect>
+    <rect x="180" y="206" width="6" height="8" fill="#ffe600"><animate attributeName="opacity" values="1;.1;1" dur="4.1s" repeatCount="indefinite"/></rect>
+    <rect x="200" y="244" width="6" height="8" fill="#ff2a6d"><animate attributeName="opacity" values="0;1;0" dur="3.6s" repeatCount="indefinite"/></rect>
+    <rect x="240" y="224" width="6" height="8" fill="#00f0ff"><animate attributeName="opacity" values="1;0;1" dur="2.4s" repeatCount="indefinite"/></rect>
+    <rect x="310" y="246" width="6" height="8" fill="#ffe600"><animate attributeName="opacity" values="0;1;0" dur="3.9s" repeatCount="indefinite"/></rect>
+    <rect x="530" y="248" width="6" height="8" fill="#ff2a6d"><animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite"/></rect>
+    <rect x="600" y="232" width="6" height="8" fill="#00f0ff"><animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite"/></rect>
+    <rect x="662" y="218" width="6" height="8" fill="#ffe600"><animate attributeName="opacity" values="1;0;1" dur="4.6s" repeatCount="indefinite"/></rect>
+    <rect x="950" y="212" width="6" height="8" fill="#00f0ff"><animate attributeName="opacity" values="0;1;0" dur="3.2s" repeatCount="indefinite"/></rect>
+    <rect x="976" y="252" width="6" height="8" fill="#ff2a6d"><animate attributeName="opacity" values="1;0;1" dur="2.5s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- NEON SIGNS -->
+  <g font-family="'Noto Sans JP','Yu Gothic','MS Gothic',monospace" font-weight="700" text-anchor="middle" filter="url(#glow)">
+    <g fill="#ff2a6d" font-size="20">
+      <text x="135" y="126">電</text><text x="135" y="150">脳</text>
+      <animate attributeName="opacity" values="1;1;.25;1;.5;1;1" keyTimes="0;.5;.52;.54;.58;.6;1" dur="6s" repeatCount="indefinite"/>
+    </g>
+    <g fill="#00f0ff" font-size="14">
+      <text x="730" y="186">ラ</text><text x="730" y="202">ー</text><text x="730" y="218">メ</text><text x="730" y="234">ン</text>
+      <animate attributeName="opacity" values="1;1;.3;1;1" keyTimes="0;.7;.73;.76;1" dur="7s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- TORII -->
+  <g fill="#ff2a6d" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;1;.7;1;.88;1" keyTimes="0;.6;.62;.64;.7;1" dur="5s" repeatCount="indefinite"/>
+    <path d="M796,158 Q880,176 964,158 L968,146 Q880,164 792,146 Z"/>
+    <rect x="814" y="170" width="132" height="6"/>
+    <rect x="832" y="176" width="9" height="94"/>
+    <rect x="919" y="176" width="9" height="94"/>
+    <rect x="822" y="198" width="116" height="7"/>
+    <rect x="874" y="170" width="12" height="28"/>
+  </g>
+
+  <!-- KATAKANA RAIN -->
+  <g opacity=".6">
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="7s" begin="-2s" repeatCount="indefinite"/><use href="#c1" x="24"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="9s" begin="-6s" repeatCount="indefinite"/><use href="#c2" x="84"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="6s" begin="-1s" repeatCount="indefinite"/><use href="#c3" x="236"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="8s" begin="-4s" repeatCount="indefinite"/><use href="#c1" x="318"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="10s" begin="-7s" repeatCount="indefinite"/><use href="#c2" x="402"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="7.5s" begin="-3s" repeatCount="indefinite"/><use href="#c3" x="606"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="9.5s" begin="-5s" repeatCount="indefinite"/><use href="#c1" x="690"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="6.5s" begin="-2.5s" repeatCount="indefinite"/><use href="#c2" x="772"/></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -150;0 300" dur="8.5s" begin="-6.5s" repeatCount="indefinite"/><use href="#c3" x="948"/></g>
+  </g>
+
+  <!-- GROUND -->
+  <rect x="0" y="270" width="1000" height="30" fill="#05000f"/>
+  <rect x="0" y="270" width="1000" height="2" fill="#00f0ff" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;.55;1" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- TITLE -->
+  <g font-family="'Courier New','Fira Code',Consolas,monospace" font-weight="700" text-anchor="middle" letter-spacing="4">
+    <text x="498" y="150" font-size="54" fill="#ff2a6d">BERAT ÖZKAN
+      <animate attributeName="x" calcMode="discrete" values="498;498;491;507;498" keyTimes="0;.9;.92;.95;1" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="502" y="150" font-size="54" fill="#00f0ff">BERAT ÖZKAN
+      <animate attributeName="x" calcMode="discrete" values="502;502;509;494;502" keyTimes="0;.9;.92;.95;1" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="150" font-size="54" fill="#fff" stroke="#0a0014" stroke-width="3" paint-order="stroke" filter="url(#glow)">BERAT ÖZKAN</text>
+    <text x="500" y="182" font-size="15" fill="#00f0ff" letter-spacing="5" filter="url(#glow)">BACKEND // PLC // LOCAL LLM &amp; RAG</text>
+    <text x="500" y="204" font-size="12" fill="#ffe600" letter-spacing="6" font-family="'Noto Sans JP','Yu Gothic','MS Gothic',monospace">電脳開発者  ·  サイバーパンク
+      <animate attributeName="opacity" values="1;1;.4;1;1" keyTimes="0;.8;.84;.88;1" dur="5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- HUD -->
+  <g fill="none" stroke="#00f0ff" stroke-width="2" opacity=".85">
+    <path d="M8,34 V8 H34"/><path d="M966,8 H992 V34"/>
+    <path d="M8,266 V292 H34"/><path d="M992,266 V292 H966"/>
+  </g>
+  <circle cx="24" cy="23" r="3" fill="#00ff9c"><animate attributeName="opacity" values="1;.1;1" dur="1.2s" repeatCount="indefinite"/></circle>
+  <text x="34" y="27" font-family="'Courier New',monospace" font-size="11" fill="#00ff9c" letter-spacing="1">SYSTEM ONLINE · システム起動中</text>
+  <text x="976" y="27" text-anchor="end" font-family="'Courier New',monospace" font-size="11" fill="#ff2a6d" letter-spacing="1">NEO-TOKYO // 2077</text>
+
+  <!-- SCANLINES -->
+  <rect width="1000" height="300" fill="url(#scan)"/>
+  <rect width="1000" height="50" fill="url(#bar)">
+    <animate attributeName="y" values="-50;300" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
