@@ -47,8 +47,3 @@ I'm exploring how these pieces fit together: from collecting machine data to bui
 
 <br />
 
-<div align="center">
-  <em>Keep swimming upstream.</em>
-  <br />
-  <sub>Small iterations. Deeper understanding. Better systems.</sub>
-</div>
